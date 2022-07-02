@@ -86,7 +86,7 @@ gulp.task('scss', function () {
 });
 
 gulp.task('index', function () {
-    return gulp.src([paths.src.base + '*.html'])
+    return gulp.src([paths.src.base + '**/*.html'])
         .pipe(fileinclude({
             prefix: '@@',
             basepath: './src/partials/',
@@ -128,7 +128,7 @@ gulp.task('serve', gulp.series('scss', 'html', 'index', 'assets', 'vendor', func
     });
 
     gulp.watch([paths.src.scss + '/swipe/**/*.scss', paths.src.scss + '/swipe.scss'], gulp.series('scss'));
-    gulp.watch([paths.src.html, paths.src.base + '*.html', paths.src.partials], gulp.series('html', 'index'));
+    gulp.watch([paths.src.html, paths.src.base + '**/*.html', paths.src.partials], gulp.series('html', 'index'));
     gulp.watch([paths.src.assets], gulp.series('assets'));
     gulp.watch([paths.src.vendor], gulp.series('vendor'));
 }));
@@ -168,7 +168,7 @@ gulp.task('minify:html', function () {
 });
 
 gulp.task('minify:html:index', function () {
-    return gulp.src([paths.dist.base + '*.html'])
+    return gulp.src([paths.dist.base + '**/*.html'])
         .pipe(htmlmin({
             collapseWhitespace: true
         }))
@@ -243,7 +243,7 @@ gulp.task('copy:dev:html', function () {
 
 // Copy index
 gulp.task('copy:dist:html:index', function () {
-    return gulp.src([paths.src.base + '*.html'])
+    return gulp.src([paths.src.base + '**/*.html'])
         .pipe(fileinclude({
             prefix: '@@',
             basepath: './src/partials/',
@@ -255,7 +255,7 @@ gulp.task('copy:dist:html:index', function () {
 });
 
 gulp.task('copy:dev:html:index', function () {
-    return gulp.src([paths.src.base + '*.html'])
+    return gulp.src([paths.src.base + '**/*.html'])
         .pipe(fileinclude({
             prefix: '@@',
             basepath: './src/partials/',
