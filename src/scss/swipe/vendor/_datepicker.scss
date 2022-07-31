@@ -126,7 +126,7 @@ $dp-cell-shrinked-width: $dp-cell-size-base * 7 / 8;
 }
 
 %flex-basis-day {
-  flex-basis: percentage(1 / 7);
+  flex-basis: percentage(calc(1 / 7));
 }
 
 %flex-basis-month-year {

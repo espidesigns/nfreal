@@ -320,8 +320,8 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0));
 $spacer: 1rem;
 $spacers: (
   0: 0,
-1: $spacer / 4,
-  2: $spacer / 2,
+  1: calc($spacer / 4),
+  2: calc($spacer / 2),
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
@@ -1095,7 +1095,7 @@ $navbar-brand-font-size:            $font-size-lg;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2;
 $navbar-brand-height:               $navbar-brand-font-size * $line-height-base;
-$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) / 2;
+$navbar-brand-padding-y:            calc(($nav-link-height - $navbar-brand-height) / 2);
 $navbar-brand-margin-right:         1rem;
 
 $navbar-toggler-padding-y:          .5rem;
@@ -1143,7 +1143,7 @@ $dropdown-border-radius:            $border-radius;
 $dropdown-border-width:             $border-width;
 $dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width);
 $dropdown-divider-bg:               $gray-200;
-$dropdown-divider-margin-y:         $spacer / 2;
+$dropdown-divider-margin-y:         calc($spacer / 2);
 $dropdown-box-shadow:               $box-shadow;
 
 $dropdown-link-color:               $gray-900;
@@ -1155,7 +1155,7 @@ $dropdown-link-active-bg:           $component-active-bg;
 
 $dropdown-link-disabled-color:      $gray-600;
 
-$dropdown-item-padding-y:           $spacer / 4;
+$dropdown-item-padding-y:           calc($spacer / 4);
 $dropdown-item-padding-x:           $spacer;
 
 $dropdown-header-color:             $gray-900;
@@ -1215,7 +1215,7 @@ $card-bg:                           $white;
 
 $card-img-overlay-padding:          $spacer;
 
-$card-group-margin:                 $grid-gutter-width / 2;
+$card-group-margin:                 calc($grid-gutter-width / 2);
 
 
 // Icons
@@ -1241,8 +1241,8 @@ $tooltip-color:                     $black;
 $tooltip-bg:                        $white;
 $tooltip-border-radius:             $border-radius;
 $tooltip-opacity:                   .9;
-$tooltip-padding-y:                 $spacer / 4;
-$tooltip-padding-x:                 $spacer / 2;
+$tooltip-padding-y:                 calc($spacer / 4);
+$tooltip-padding-x:                 calc($spacer / 2);
 $tooltip-margin:                    0;
 
 $tooltip-arrow-width:               .8rem;
@@ -1406,7 +1406,7 @@ $list-group-border-radius:          $border-radius;
 $list-group-sm-item-padding-y:      .625rem;
 $list-group-sm-item-padding-x:      .875rem;
 
-$list-group-item-padding-y:         $spacer / 2;
+$list-group-item-padding-y:         calc($spacer / 2);
 $list-group-item-padding-x:         $spacer;
 $list-group-item-bg-level:          -9;
 $list-group-item-color-level:       6;
