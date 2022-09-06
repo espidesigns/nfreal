@@ -2,15 +2,18 @@
     <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom @@classes">
         <div class="container position-relative">
             <a class="navbar-brand mr-lg-4" href="@@webRoot/index.html">
-                <img class="navbar-brand-dark" src="@@webRoot/assets/img/logo-nfreal-light.png" alt="Logo light">
-                <img class="navbar-brand-light" src="@@webRoot/assets/img/logo-nfreal-dark.png" alt="Logo dark">
+                <picture class="">
+                    <source srcset="@@webRoot/assets/img/logo-nfreal-32x32.png" media="(max-width: 575px)">
+                    <img class="navbar-brand-light" src="@@webRoot/assets/img/logo-nfreal-dark.png" alt="NFReal" >
+                    <img class="navbar-brand-dark" src="@@webRoot/assets/img/logo-nfreal-light.png" alt="NFReal" >
+                </picture>
             </a>
             <div class="navbar-collapse collapse ml-auto" id="navbar_global">
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">
                             <a href="@@webRoot/index.html">
-                                <img src="@@webRoot/assets/img/logo-nfreal-dark.png" alt="Logo dark">
+                                <img src="@@webRoot/assets/img/logo-nfreal-dark.png" alt="NFReal">
                             </a>
                         </div>
                         <div class="col-6 collapse-close">
@@ -29,26 +32,20 @@
                             About
                         </a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a href="gallery.html" class="nav-link">
-                            Gallery
-                        </a>
-                    </li> -->
                     <li class="nav-item">
                         <a href="@@webRoot/faq.html" class="nav-link">
                             FAQ
                         </a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a href="#download" class="nav-link">
-                            Download
-                        </a>
-                    </li> -->
+                    <li class="nav-item">
+                        <a href="@@webRoot/assets-for-sale.html" class="btn btn-outline-soft mb-3 mb-lg-0 ml-0 ml-lg-3 animate-up-2">Assets for Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@@webRoot/art-database.html" class="btn btn-md btn-tertiary text-white mb-3 mb-lg-0 ml-0 ml-lg-3 animate-up-2">Art Database<i class="fas fa-images ml-2"></i></a>
+                    </li>
                 </ul>
             </div>
             <div class="d-flex align-items-center">
-                <a href="@@webRoot/assets-for-sale.html" class="btn btn-outline-soft ml-md-3 animate-up-2">Assets for Sale</a>
-                <a href="@@webRoot/art-database.html" class="btn btn-md btn-tertiary text-white ml-md-3 animate-up-2">Art Database<i class="fas fa-images ml-2"></i></a>
                 <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
