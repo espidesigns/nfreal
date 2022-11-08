@@ -2,7 +2,12 @@
                 <div class="row row-grid align-items-center justify-content-center">
                     <div class="col-12 col-md-7">
                         <h5 class="">Got questions?</h5>
-                        <form name="enquire" netlify>
+                        <form name="Enquiry Form" netlify-honeypot="bot-field-2" data-netlify="true">
+                            <p class="d-none">
+                              <label>
+                                Don't fill this out if you're human: <input name="bot-field-2" />
+                              </label>
+                            </p>
                             <input type="hidden" name="asset" value="@@asset">
                             <div class="form-row mb-2">
                                 <div class="col-12">

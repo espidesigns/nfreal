@@ -49,10 +49,15 @@
             </div>
             <div class="col-12 col-md-4 mb-5 mb-lg-0">
                 <span class="h5 mb-3 d-block">Subscribe</span>
-                <form name="subscribe" netlify>
+                <form name="Subscribe to Newletter" netlify-honeypot="bot-field" data-netlify="true">
                     <div class="form-row mb-2">
                         <div class="col-12">
-                            <input type="email" class="form-control mb-2" placeholder="you@company.com" name="email" aria-label="Subscribe form" required>
+                            <p class="d-none">
+                              <label>
+                                Don't fill this out if you're human: <input name="bot-field" />
+                              </label>
+                            </p>
+                            <input type="email" class="form-control mb-2" placeholder="your@email.com" name="email" aria-label="Subscribe form" required>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-dark shadow-soft btn-block" data-loading-text="Sending">
