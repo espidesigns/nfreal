@@ -1,7 +1,7 @@
 {
-    "name": "NFreal",
+    "name": "art-movers",
     "version": "1.0.0",
-    "description": "NFReal is a method for selling valuable real items using NFTs",
+    "description": "Art Movers",
     "main": "gulpfile.js",
     "author": "espidesigns",
     "keywords": [
